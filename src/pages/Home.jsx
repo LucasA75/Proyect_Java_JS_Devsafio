@@ -15,7 +15,7 @@ const usuario1 = [{
 {
     nombre: 'Jose',
     apellido: 'Perez',
-    correo: 'comePasteles3000@gmail.com',
+    correo: 'Jose@gmail.com',
     rut: '92242342-4'
 },
 {
@@ -41,14 +41,6 @@ const autos = [
     }
 ]
 
-
-/* const usuario2={
-    nombre:'Jose',
-    apellido:'Perez',
-    correo:'comecaca@gmail.com',
-    rut:'92242342-4'
-}
- */
 const HomePage = () => {
     /* Palabra reservada para navegar */
     const navigate = useNavigate();
@@ -82,7 +74,7 @@ const HomePage = () => {
     }
 
     const userEdit = async (usuarioEditado) => {
-        const usuaroBD = await editUser(usuarioEditado);
+        const usuarioBD = await editUser(usuarioEditado);
         getUsers();
     }
 
@@ -123,13 +115,12 @@ const HomePage = () => {
 
     return (
         <>
-            {/* Aqui se van colocando los componentes */}
             <Navbar />
             <main className="Home__Main container-fluid p-0 m-0 min-vh-100 bg-black d-flex flex-direction-column justify-content-center align-items-center">
                 <div className="container-lg row text-white">
                     <div className="col-md-3">
-                        <h1 className="display-1">FanAutos</h1>
-                        <p>Empresa especializada en la venta de autos</p>
+                        <h1 className="display-1" style={{fontSize:"6vw"}}>FanAutos</h1>
+                        <p style={{fontSize:"20px", fontWeight:"lighter"}}>Empresa especializada en la venta de autos</p>
                     </div>
                     <div className="col-md-9  d-flex justify-content-center position-relative d-none d-md-block">
                         <img className="position-absolute top-50 start-50 translate-middle" alt="autito" src={autito} id="autito" ></img>
@@ -148,9 +139,6 @@ const HomePage = () => {
                     <FormularioUsuario userAdd={userAdd} usuarioEditado={usuarioEditado} setUsuarioEditado={setUsuarioEditado} userEdit={userEdit} />
                 </div>
             </section>
-           {/*  <TablaUsuarios usuarios={state} deleteUser={userDelete} setUsuarioEditado={setUsuarioEditado} /> */}
-                {/* <Boton className="btn2" infoboton={"Ir a Autos"} handleOnClick={handleOnClick} /> */}
-            {/* <TablaAutos autos={auto} autoDelete={autoDelete}/> */}
             <Footer/>
         </>
         //Holas

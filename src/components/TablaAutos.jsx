@@ -23,6 +23,12 @@ const TablaAutos = ({autos, autoDelete }) => {
                 <th>
                 Año
                 </th>
+                <th>
+                    Valor
+                </th>
+                <th>
+                    Acciones
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -39,7 +45,10 @@ const TablaAutos = ({autos, autoDelete }) => {
                 {auto.modelo}
             </td>
             <td>
-                {auto.año}
+                {auto.ano}
+            </td>
+            <td>
+                {auto.valor}
             </td>
             <td>
             <button

@@ -7,9 +7,6 @@ const Navbar = () => {
         const navigate = useNavigate();
 
         /* Aqui hago una arrow funcion y le digo primero : donde quiero ir */
-        
-        
-      const handleOnClick2 = useCallback(() => navigate("/Admin", {}, [navigate]));
     const handleOnClick = useCallback(()=> navigate("/",{},[navigate]));
 
     /* Asi funciona el Navbar ... porfin voy entendiendo React uFFF */
@@ -28,7 +25,7 @@ const Navbar = () => {
           </button>
           <section className="collapse navbar-collapse" id="myTogglerNav">
             <div className="navbar-nav ms-auto text-uppercase">
-              <a className="nav-item nav-link" href="/Admin">Admin</a>
+            <a className="nav-item nav-link" href="/auto">Autos</a>
               <a className="nav-item nav-link" href="#Contacto">Contacto</a>
               <a className="nav-item nav-link" href="#Footer">Sobre Nosotros</a>
             </div>

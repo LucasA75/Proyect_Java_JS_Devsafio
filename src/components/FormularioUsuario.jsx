@@ -34,6 +34,7 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado,userEdit
         }
 
     }, [usuarioEditado]);
+
     const handleInputChange = (e) => {
         //Esta funcion se llama cada vez que nosotros escribimos algo en algun input de nuestra pagina
         const changedFormValue = {
@@ -46,8 +47,8 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado,userEdit
     }
 
     return (
-        <div classNameName="container-lg formularioUsuario">
-        <div classNameName="F_usuario" className="container-lg">
+        <div className="container-lg formularioUsuario">
+        <div className="F_usuario container-lg">
 
             {usuarioEditado !== null ? <h3 className="text-center mb-3 mt-2">Editar Usuario</h3> : <h3 className="text-center mb-3">Ingrese Usuario</h3>}
 

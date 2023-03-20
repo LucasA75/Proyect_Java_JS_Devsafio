@@ -8,7 +8,7 @@ const Boton = ({infoboton, handleOnClick}) =>{
     return(
         <div>
             <button 
-             type="button" style={styleButton} classNameName="btn btn-primary btn1" 
+             type="button" style={styleButton} className="btn btn-primary btn1" 
              onClick={()=>{ 
                 handleOnClick();
              }}
